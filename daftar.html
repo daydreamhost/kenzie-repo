@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kenzie Komunika | Daftar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background-color: #800000;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky; /* Tambahkan sticky */
+      top: 0; /* Tetap di atas */
+      z-index: 1000; /* Pastikan navbar di atas konten lainnya */
+    }
+
+    header h1 {
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffdddd;
+    }
+
+    /* Animasi untuk kemunculan elemen */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.5s ease-out forwards;
+    }
+
+    .fade-in-delay {
+      opacity: 0;
+      animation: fadeIn 1.5s ease-out 0.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .hero {
+      padding: 80px 40px;
+      text-align: center;
+      background-color: #f8f8f8;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 50%;
+      text-align: left;
+    }
+
+    .hero-text h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: #800000;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero-text a {
+      background-color: #800000;
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-text a:hover {
+      background-color: #a00000;
+    }
+
+    .hero-img {
+      max-width: 40%;
+      position: relative;
+      padding: 20px;
+      
+    }
+
+    .hero-img img {
+      width: 100%;
+      background-image: none;
+    
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 60px 40px;
+      background-color: white;
+    }
+
+    .feature {
+      flex: 1 1 300px;
+      max-width: 1000px;
+      margin: 20px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .feature p {
+      margin-left:20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    .feature h3 {
+      color: #800000;
+      margin-bottom: 10px;
+      margin-top: 15px;
+    }
+    
+    .feature img {
+      width: 80%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    
+
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #800000;
+      color: white;
+      margin-top: 40px;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+      header, .hero, .features, .gallery {
+        padding: 20px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      .hero-img {
+        max-width: 100%;
+        margin-top: 20px;
+      }
+
+      .hero h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kenzie Komunika</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="daftar.html">Daftar</a>
+      <a href="kode-reff.html">Refferal</a>
+      <a href="">Tentang</a>
+    </nav>
+  </header>
+
+  <section class="hero fade-in">
+    <div class="hero-text fade-in">
+      <h2>Ayo bergabung menjadi mitra kami.</h2>
+       <p>Cukup dengan 4 langkah mudah kamu sudah bisa menjadi bagian dari kami, simak langkah-langkahnya dibawah ini.</p>
+    </div>
+  </section>
+
+  <section class="features fade-in" id="fitur">
+    <div class="feature">
+      <h3>1. Dowbload aplikasi Kenzie Komunika</h3>
+       <p>Unduh aplikasi Kenzie Komunika dari Google Play Store dan install di perangkat Android Kamu.</p>
+    </div>
+    
+    <div class="feature">
+      <h3>2. Jika belum memiliki akun klik daftar sekarang untuk membuat akun.</h3>
+    <img src="img/kenzie-daftar.png" alt="cara-daftar">
+    </div>
+    
+    <div class="feature">
+      <h3>3. Isi data diri kamu dan masukan kode refferal untuk mendapat keuntungan lebih. Kodenya cek <a href="kode-reff.html">disini</a> ya</h3>
+    <img src="img/kenzie-daftar-1.png" alt="daftar">
+    <p>Jangan lupa setujui Syarat dan Ketentuan kami ya.</p>
+    </div>
+    
+     <div class="feature">
+      <h3>4.Tinggal kirim deh</h3>
+      <img src="img/kirim.png" alt>
+      <p>Setiap transaksi di aplikasi akan mendapatkan poin sebagai reward dan dapat ditukarkan menjadi saldo.</p>
+    </div>
+  </section>
+
+
+  <footer class="fade-in">
+    &copy; Kenzie Komunika 2025
+  </footer>
+
+  <script>
+    // Intersection Observer untuk memantau elemen yang muncul pada viewport
+    const fadeElements = document.querySelectorAll('.fade-in, .fade-in-delay');
+    const observerOptions = {
+      threshold: 0.1
+    };
+    
+    const fadeInObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    fadeElements.forEach(element => fadeInObserver.observe(element));
+  </script>
+
+</body>
+</html>
